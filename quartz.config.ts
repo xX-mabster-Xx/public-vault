@@ -69,7 +69,8 @@ const config: QuartzConfig = {
       Plugin.TableOfContents({ maxDepth: 6}),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
-      Plugin.Latex({ renderEngine: "katex" })
+      Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.HardLineBreaks()
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
